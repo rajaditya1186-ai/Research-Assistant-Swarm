@@ -69,9 +69,9 @@ def create_and_push():
         # Add authenticated remote
         subprocess.run(["git", "remote", "add", "origin", auth_remote], check=True)
         
-        print("Pushing commits to remote main branch...")
+        print("Pushing commits to remote main branch (bypassing helper cache)...")
         push_res = subprocess.run(
-            ["git", "push", "-u", "origin", "main"],
+            ["git", "-c", "credential.helper=", "push", "-u", "origin", "main"],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             text=True,
