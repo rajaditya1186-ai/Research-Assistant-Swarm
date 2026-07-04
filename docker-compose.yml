@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  scholarswarm-app:
+    build: .
+    container_name: scholarswarm-container
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+    env_file:
+      - .env
+    restart: unless-stopped

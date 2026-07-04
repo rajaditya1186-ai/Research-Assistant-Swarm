@@ -1,0 +1,38 @@
+# Python bytecode and cache folders
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# Local databases and uploads
+data/chroma_db/
+data/chroma_db_test/
+data/uploads/*
+!data/uploads/.gitkeep
+data/papers/*
+!data/papers/.gitkeep
+
+# Project logs
+*.log
+.system_generated/
+tasks/
+
+# Operating system metadata
+Thumbs.db
+.DS_Store
+
+# Secrets and environment configs
+.env
+.env.local
+.env.*.local
+
+# Submission artifacts
+research_assistant_swarm.zip

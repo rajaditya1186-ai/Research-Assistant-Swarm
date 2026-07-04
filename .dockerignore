@@ -1,0 +1,29 @@
+# Ignore local Python files and cache folders
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore local virtual environment and packages
+.venv/
+env/
+venv/
+ENV/
+
+# Ignore project local databases and transient data
+data/
+.git/
+.gitignore
+.dockerignore
+.agents/
+.gemini/
+
+# Ignore local configuration files containing secrets
+.env
+Dockerfile
+docker-compose.yml
+requirements-dev.txt
+tests/
+test_*.py
+README.md
+docs/
